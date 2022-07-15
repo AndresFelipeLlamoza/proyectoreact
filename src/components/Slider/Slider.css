@@ -1,4 +1,9 @@
 .carousel{
     padding: 5%;
     background: navy;
+    
+}
+
+.Carousel.Item{
+    border-radius: 35px; 
 }

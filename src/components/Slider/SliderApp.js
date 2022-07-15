@@ -16,8 +16,8 @@ function CarouselFadeExample() {
           width="500"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 class="fs-1">Lo mejor en videojuegos</h3>
+          <p class="fs-5">Crackeando videojuegos desde el 2022.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -30,8 +30,8 @@ function CarouselFadeExample() {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 class="fs-1">De todos los generos, para todo publico</h3>
+          <p class="fs-5">Contamos con una amplia base de datos de torrents de juegos listos para descargarse de forma gratuita.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -44,9 +44,9 @@ function CarouselFadeExample() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <h3 class="fs-1 text-dark">Juego sin molestias</h3>
+          <p class="fs-5 text-dark">
+            Nosotros hacemos esto sin nigun fin de lucro, asi que puedes navegar sin necesidad de preocuparte por los anuncios
           </p>
         </Carousel.Caption>
       </Carousel.Item>
