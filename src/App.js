@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from "./components/Navbar/NavbarApp";
 import CarouselFadeExample from './components/Slider/SliderApp';
 import Cards from './components/Cards/CardsApp'
+import FooterApp from './components/Footer/FooterApp'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <CarouselFadeExample/>
       <Cards/>
+      <FooterApp/>
       </div>
     );
 }

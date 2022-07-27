@@ -3,16 +3,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Hiei from "./hiei.jpg";
-import Logo from "./logo.css"
+import Logo from "./logo.css";
+
 
 function NavbarApp() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
+    <Navbar  style={{backgroundColor: "#051336"}} collapseOnSelect expand="lg" variant="dark">
       <Container>
         <Navbar.Brand href="#home"><img src={Hiei} class="logo"></img>El llamosin games</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto" id="navbar">
             <Nav.Link href="#features">Inicio</Nav.Link>
             <Nav.Link href="#pricing">Juegos</Nav.Link>
             <NavDropdown title="Categorias" id="collasible-nav-dropdown">

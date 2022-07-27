@@ -1,9 +1,12 @@
 .carousel{
     padding: 5%;
-    background: navy;
-    margin-bottom:50px;
+    background: #060621;
 }
 
 .Carousel.Item{
     border-radius: 35px; 
+}
+
+.body{
+    background-color: #000C18 ;
 }
