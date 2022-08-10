@@ -1,0 +1,12 @@
+navegador{
+    background-color: #051336;
+}
+
+@font-face {
+    font-family: 'StarJedi';
+    src: url(../fuentes/StarJedi.ttf);
+}
+
+.texto-nav{
+    font-family: 'StarJedi';
+}

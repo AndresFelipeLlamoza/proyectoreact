@@ -4,29 +4,22 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import icono from "../img.jsx";
 import Logo from "./logo.css";
+import {Link} from 'react-router-dom';
+import img from '../img.jsx';
+import './NavbarApp.css';
 
 
 function NavbarApp() {
   return (
     <Navbar  style={{backgroundColor: "#051336"}} collapseOnSelect expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="#home"><img src={icono} class="logo"></img>El llamosin games</Navbar.Brand>
+        <Navbar.Brand  href="#home"><img src={img.icono} class="logo"></img>The Star Wars Page</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" id="navbar">
-            <Nav.Link href="#features">Inicio</Nav.Link>
-            <Nav.Link href="#pricing">Juegos</Nav.Link>
-            <NavDropdown title="Categorias" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Accion</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Plataformas</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Shooters</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Aventuras</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Pelea</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Mas
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link><Link to='/'>Inicio</Link></Nav.Link>
+            <Nav.Link href="#pricing"><Link  to='/characters'>Personajes</Link></Nav.Link>
+            <Nav.Link href="#pricing"><Link className="texto-nav" to='/planets'>Planetas</Link></Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="#deets">Registrarse</Nav.Link>
