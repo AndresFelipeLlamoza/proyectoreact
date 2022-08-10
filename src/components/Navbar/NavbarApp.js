@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Hiei from "./hiei.jpg";
+import icono from "../img.jsx";
 import Logo from "./logo.css";
 
 
@@ -10,7 +10,7 @@ function NavbarApp() {
   return (
     <Navbar  style={{backgroundColor: "#051336"}} collapseOnSelect expand="lg" variant="dark">
       <Container>
-        <Navbar.Brand href="#home"><img src={Hiei} class="logo"></img>El llamosin games</Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={icono} class="logo"></img>El llamosin games</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" id="navbar">
