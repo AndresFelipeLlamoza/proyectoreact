@@ -15,10 +15,7 @@ function Home() {
       <Navbar/>
       <CarouselFadeExample/>
       <Video/>
-      <Cards 
-        titulo="Informacion y mucho mas!" img={card1} texto="Informacion sobre la saga completa aqui y ahora"
-        titulo2="Bienvenido" img2={card2} texto2="Embarcate en el universo de star wars mediante nuestra increible pagina"
-        titulo3="El lado oscuro" img3={card3} texto3="El lado oscuro te necesita, aceptas pagar el precio ?"/>
+      <Cards/>
       <FooterApp/>
       </div>
     );

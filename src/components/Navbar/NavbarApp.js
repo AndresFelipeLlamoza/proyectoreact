@@ -17,15 +17,9 @@ function NavbarApp() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" id="navbar">
-            <Nav.Link><Link to='/'>Inicio</Link></Nav.Link>
-            <Nav.Link href="#pricing"><Link  to='/characters'>Personajes</Link></Nav.Link>
-            <Nav.Link href="#pricing"><Link className="texto-nav" to='/planets'>Planetas</Link></Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="#deets">Registrarse</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Login
-            </Nav.Link>
+            <Nav.Link><Link className="texto-nav"to='/'>Inicio</Link></Nav.Link>
+            <Nav.Link><Link  className="texto-nav" to='/characters'>Personajes</Link></Nav.Link>
+            <Nav.Link><Link className="texto-nav" to='/planets'>Planetas</Link></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../resources/img/logo.jpg';
+import logo from '../resources/img/logo.png';
 import sli1 from '../resources/img/sli1.jpg';
 import sli2 from '../resources/img/sli2.jpg';
 import sli3 from '../resources/img/sli3.jpg';

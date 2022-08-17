@@ -1,20 +1,20 @@
 .Fondo{
     background-color: #000C18;
-    
-}
-
-
-.text-center{
-    color: rgb(255, 255, 255);
-}
-
-.Contenedor{
-
     display: grid;
     grid-template-columns: 20% 20% 20%;
+}
+
+
+.contenedor{
+    
     row-gap: 50px;
     column-gap: 160px;
     margin-left: 60px;
-    margin-top: 80px;
-
 }
+
+.tarjeta-container{
+    width: 23rem;
+    text-align: center;
+    background-color: #ffbf00;
+}
+
