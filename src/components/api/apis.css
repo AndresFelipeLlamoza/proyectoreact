@@ -1,7 +1,27 @@
 .contenedor-persona{
-    background-image: url(https://th.bing.com/th/id/R.05f07e7faae6db4f23d87d3d273e9713?rik=hbfqW0j8lKbBgg&pid=ImgRaw&r=0)
+    background-color: aliceblue;
 }
 
 .contenedor-planeta{
-    background-image: url(https://th.bing.com/th/id/R.05f07e7faae6db4f23d87d3d273e9713?rik=hbfqW0j8lKbBgg&pid=ImgRaw&r=0)
+    background-color: white
 }
+
+.ContainerApi{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    row-gap: 50px;  
+    column-gap: 40px;
+    justify-content: center;  
+    border-radius:50px
+}
+
+.contenido-cp{
+    padding: 25px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 40px;
+    column-gap: 30px;
+    background-color: rgb(255, 255, 70);
+}
+

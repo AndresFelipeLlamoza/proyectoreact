@@ -17,7 +17,7 @@ function NavbarApp() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto" id="navbar">
-            <Nav.Link><Link className="texto-nav"to='/'>Inicio</Link></Nav.Link>
+            <Nav.Link><Link className="texto-nav" to='/'>Inicio</Link></Nav.Link>
             <Nav.Link><Link  className="texto-nav" to='/characters'>Personajes</Link></Nav.Link>
             <Nav.Link><Link className="texto-nav" to='/planets'>Planetas</Link></Nav.Link>
           </Nav>

@@ -8,7 +8,7 @@ import './Cards.css'
 const tarjeta = (props) => {
     return ( 
         <div className="Fondo">
-        <div className="contenedor" style={{display: 'grid', gridTemplateColumns: '20% 20% 20%'}}>
+        <div className="contenedor">
           <Card className="tarjeta-container" style={{backgroundColor: '#ffbf00'}}>
             <Card.Img style={{borderRadius: '0px 50px 0px 50px', marginTop: '38px'}} variant="top" src={props.img} />
             <Card.Body>

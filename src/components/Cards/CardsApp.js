@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+import './Cards.css'
 import img from '../img.jsx'
 import CardProp from './CardProp'
 
@@ -27,7 +28,7 @@ const CardsInfo = [
 
 function CardsApp () {
   return (  
-    <div class="cardsG">
+    <div class="cardsGrupo">
       {CardsInfo.map((card) => (
         <CardProp titulo={card.titulo} img={card.img} texto={card.texto}/>
      ))}

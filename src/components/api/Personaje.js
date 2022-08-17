@@ -17,31 +17,27 @@ export const PersonaApi = () => {
         person();
     },[])
   return (
-    <div className="contenedor-persona">
-        <div className="Fondo">
-        <div className="contenedor" style={{display: 'grid', gridTemplateColumns: '20% 20% 20%'}}>
-          <Card className="tarjeta-container" style={{backgroundColor: '#ffbf00'}}>
-            <Card.Img style={{borderRadius: '0px 50px 0px 50px', marginTop: '38px'}} variant="top" />
-            <Card.Body>
-              <h3>{ Personas.name }</h3>
-              <Card.Text>
-              {Personas.map(Personas=>(
-                    <div key={setPersonas}>
-                    <p>{ Personas.heigth}</p>
-                    <p>{ Personas.mass}</p>
-                    <p>{ Personas.hair_color}</p>
-                    <p>{ Personas.skin_color}</p>
-                    <p>{ Personas.eye_color}</p>
-                    <p>{ Personas.birth_year}</p>
-                    <p>{ Personas.gender}</p>
-                    </div>
-                ))}
-              </Card.Text>
-              <Button variant="primary">Ver mas</Button>
-            </Card.Body>
-          </Card>
-        </div>
+      <div className='ContainerApi'>
+          {Personas.map(Personas=>(
+              <div className="contenido-cp" key={setPersonas}>
+              <h5>Nombre</h5>
+              <p>{Personas.name}</p>
+              <h5>Altura</h5>
+              <p>{ Personas.height}</p>
+              <h5>Peso</h5>
+              <p>{ Personas.mass}</p>
+              <h5>Color de pelo</h5>
+              <p>{ Personas.hair_color}</p>
+              <h5>Color de piel</h5>
+              <p>{ Personas.skin_color}</p>
+              <h5>Color de ojos</h5>
+              <p>{ Personas.eye_color}</p>
+              <h5>Año de nacimiento</h5>
+              <p>{ Personas.birth_year}</p>
+              <h5>Genero</h5>
+              <p>{ Personas.gender}</p>
+              </div>
+            ))}
       </div>
-    </div>
   )
 }
