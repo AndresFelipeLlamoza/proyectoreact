@@ -6,6 +6,7 @@ import sli3 from '../resources/img/sli3.jpg';
 import car1 from '../resources/img/car1.jpg';
 import car2 from '../resources/img/car2.jpg';
 import car3 from '../resources/img/car3.jpg';
+import cardimage from '../resources/img/cardimage.jpg';
 
 
 export default{
@@ -15,5 +16,6 @@ export default{
     "slide3":sli3,
     "card1":car1,
     "card2":car2,
-    "card3":car3
+    "card3":car3,
+    "pjpic": cardimage
 };

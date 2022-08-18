@@ -4,15 +4,16 @@
 
 
 .tarjeta-container{
-    width: 24rem;
     text-align: center;
-    background-color: #ffbf00;
+    background-color: #f4d061;
+    height: 450px;
+    margin-bottom: 50px;
 }
 
 .cardsGrupo{
     display: grid;
     grid-template-columns: 20% 20% 20%;
-    column-gap: 150px; 
     background-color: #000C18;
     justify-content: center;
+    column-gap: 150px;
 }

@@ -9,7 +9,7 @@ const tarjeta = (props) => {
     return ( 
         <div className="Fondo">
         <div className="contenedor">
-          <Card className="tarjeta-container" style={{backgroundColor: '#ffbf00'}}>
+          <Card className="tarjeta-container" style={{backgroundColor: '#f4d061'}}>
             <Card.Img style={{borderRadius: '0px 50px 0px 50px', marginTop: '38px'}} variant="top" src={props.img} />
             <Card.Body>
               <h3>{props.titulo}</h3>

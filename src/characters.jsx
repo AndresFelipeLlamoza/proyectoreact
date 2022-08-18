@@ -8,6 +8,9 @@ function Characters() {
     return (
         <div className='Navbar'>
         <NavbarApp/>
+        <center>
+            <h1 className="Tpersonajes">Listado de personajes</h1>
+        </center>
         <div className='personajescont'>
             <PersonaApi/>
         </div>
