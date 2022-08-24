@@ -1,25 +1,24 @@
 import { useState } from "react";
-
+ 
 export const UsePerson = () => {
   const [dataPerson, setDataPerson] = useState([]);
-
   const [Contador, setContador] = useState(1);
-
-  const restarle = () => {
+ 
+  const disminuir = () => {
     if (Contador <= 1) {
       setContador(1);
     } else {
       setContador(Contador - 1);
     }
   };
-  const sumarle = () => {
-    if (Contador < 9) {
+  const aumentar = () => {
+    if (Contador < 6) {
       setContador(Contador + 1);
     } else {
-      setContador(9);
+      setContador(6);
     }
   };
-
+ 
   const getAllPerson = async (numberPage) => {
     try {
       var requestOptions = {
@@ -31,17 +30,18 @@ export const UsePerson = () => {
         requestOptions
       )
         .then((response) => response.json())
-        .then((result) => setDataPeople(result.results))
+        .then((result) => setDataPerson(result.results))
         .catch((error) => console.log("error", error));
     } catch (error) {
       console.log(error);
     }
   };
+ 
   return {
     getAllPerson,
     dataPerson,
     Contador,
-    sumarle,
-    restarle,
+    aumentar,
+    disminuir,
   };
 };
