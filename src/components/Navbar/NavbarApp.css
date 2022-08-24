@@ -17,6 +17,5 @@ navegador{
 
 .texto-nav:hover{
     color:aqua;
-    transition: all.7s;
-    transform: scale(2)
+    transition: all.4s;
 }

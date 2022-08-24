@@ -1,0 +1,29 @@
+.botonatras{
+    background-color:#f4d061;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 25px;
+    position: top left;
+    color: transparent;
+}
+
+.botonatras:hover{
+    background-color: cyan;
+    transition: all .5s;
+    transform: scale(0.9);
+    width: 180px;
+    height: 60px;
+    color: black;
+
+}
+
+.titulo{
+    color: white;
+}
+.container-detalle{
+    background-image: url(https://wallup.net/wp-content/uploads/2019/09/341378-outer-space.jpg);
+    background-size: cover;
+
+}

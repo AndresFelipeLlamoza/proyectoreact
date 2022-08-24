@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 import './apis.css'
 
 
@@ -35,6 +37,7 @@ export const PersonaApi = ({
             <p>{genero}</p>
             <h5>Hogar</h5>
             <p>{hogar}</p>
+            <a><Link to='/DetallePerson' className="enlaceperson">Ver detalles</Link></a>
         </div>
       </div>
     )

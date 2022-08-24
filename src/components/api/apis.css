@@ -6,22 +6,12 @@
 .imagenperson{
     width: 100px;
 }
-.ContainerApi{
-    display: grid;
-    grid-template-columns: 20% 20% 20%;
-    row-gap: 40px;  
-    column-gap: 100px;
-    justify-content: center;
-    background-image: url(https://wallup.net/wp-content/uploads/2019/09/341378-outer-space.jpg);
-    background-size: cover;
-    margin-bottom: 80px;
-}
 
 .contenido-cp:hover{
     opacity: 1;
     transition: all .5s;
     transform: scale(1.1);
-    box-shadow: 30px -10px #f4d061;
+    box-shadow: 15px -10px #f4d061;
 }
 .contenido-cp{
     padding: 25px;
@@ -31,7 +21,7 @@
     color:rgb(0, 0, 0);
     border-radius:35px;
     grid-template-columns: 50% 50%;
-    column-gap: 30px;
+    column-gap: 20px;
     opacity: 0.7;
     row-gap: 10px;
     background-image: url(/src/resources/img/cardimage.jpg);
@@ -51,7 +41,7 @@
     padding: 25px;
     margin-top: 60px;
     display: grid;
-    width: 380px;
+    width: 280px;
     height: 400px;
     border-radius:35px;
     grid-template-columns: 50% 50%;
@@ -66,6 +56,13 @@
     
 }
 
+.enlaceperson{
+    background-color: rgb(255, 243, 70);
+    border-radius:45px;
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
 .contenido-plane::-webkit-scrollbar{
     width: 8px
 }
@@ -78,7 +75,7 @@
     opacity: 1;
     transition: all .5s;
     transform: scale(1.1);
-    box-shadow: 40px -10px #f4d061;
+    box-shadow: 15px -10px #f4d061;
 }
 .Tpersonajes{
     color: white;
@@ -87,7 +84,7 @@
 
 .Gplanet{
     display: grid;
-    grid-template-columns: 25% 25% 25%;
+    grid-template-columns: 20% 20% 20%;
     row-gap: 40px;  
     column-gap: 150px;
     justify-content: center;
@@ -95,6 +92,15 @@
     background-size: cover;
 }
 
+.Cpersonaje{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    row-gap: 40px;  
+    column-gap: 150px;
+    justify-content: center;
+    background-image: url(https://wallup.net/wp-content/uploads/2019/09/341378-outer-space.jpg);
+    background-size: cover;
+}
 .botonPag{
     background-color: #f4d061;
     border-radius: 50px;
@@ -102,5 +108,12 @@
 }
 
 .botonPag:hover{
-    
+     transition: all .5s;
+    background-color: aqua;
+    transform: scale(0.9)
+}
+
+.botoncont{
+    display: grid;
+    justify-content: center;
 }

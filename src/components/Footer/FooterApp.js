@@ -1,12 +1,14 @@
 import React from 'react'
-
+import footerlogo from './footerlogo.png'
 function FooterApp() {
   return (
     <footer style={{padding: '25px', backgroundColor: '#051336', textAlign: 'center', color: 'white'}}>
         <p> Por Andres Felipe Llamoza Pechene | Todos los derechos reservados</p>
-        <p>Palmira - Valle del cauca</p>
-        <p>SENA - Centro de boitecnologia industrial</p>
-        <p>2022</p>
+        <div className='footergrid' style={{display: 'grid', gridTemplateColumns:'20% 20% 20%', justifyContent: 'center'}}>
+          <p>Palmira - Valle del cauca</p>
+          <p>SENA - Centro de biotecnologia industrial</p>
+          <p>2022</p>
+        </div>
     </footer>
   )
 }

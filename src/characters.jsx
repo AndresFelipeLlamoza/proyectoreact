@@ -4,7 +4,7 @@ import FooterApp from './components/Footer/FooterApp';
 import {PersonaApi} from './components/api/Personaje';
 import './components/api/apis.css';
 import React, { useEffect } from 'react';
-import { UsePerson } from './hooks/UsePerson';
+import { UsePerson } from './hooks/useperson';
 
 
 const Person = () => {
@@ -21,7 +21,7 @@ const Person = () => {
         <div>
         <NavbarApp/>
         <center>
-            <h1 className="Tpersonajes">Listado de planetas</h1>
+            <h1 className="Tpersonajes">Listado de personajes</h1>
         </center>
           <div className='Cpersonaje'>
             {dataPerson.map((personas) => (
