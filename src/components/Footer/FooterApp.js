@@ -7,7 +7,7 @@ function FooterApp() {
         <div className='footergrid' style={{display: 'grid', gridTemplateColumns:'20% 20% 20%', justifyContent: 'center'}}>
           <p>Palmira - Valle del cauca</p>
           <p>SENA - Centro de biotecnologia industrial</p>
-          <p>2022</p>
+          <p>&copy; 2022</p>
         </div>
     </footer>
   )

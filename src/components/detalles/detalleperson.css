@@ -6,20 +6,22 @@
     margin-top: 20px;
     margin-left: 25px;
     position: top left;
-    color: transparent;
+    color: black; 
 }
 
 .botonatras:hover{
     background-color: cyan;
     transition: all .5s;
     transform: scale(0.9);
-    width: 180px;
-    height: 60px;
+   
     color: black;
-
 }
 
 .titulo{
+    color: white;
+}
+
+h1{
     color: white;
 }
 .container-detalle{

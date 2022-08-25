@@ -1,11 +1,10 @@
-
 import NavbarApp from './components/Navbar/NavbarApp';
 import FooterApp from './components/Footer/FooterApp';
 import {PersonaApi} from './components/api/Personaje';
 import './components/api/apis.css';
 import React, { useEffect } from 'react';
-import { UsePerson } from './hooks/useperson';
-
+import { UsePerson } from './hooks/UsePerson';
+import { Link } from 'react-router-dom';
 
 const Person = () => {
     const { getAllPerson, dataPerson, Contador, disminuir, aumentar } =
@@ -13,7 +12,7 @@ const Person = () => {
     useEffect(() => {
       getAllPerson(Contador);
   
-      // console.log(dataPlanets);
+      console.log(dataPerson);
     }, [dataPerson]);
 
 
@@ -25,18 +24,20 @@ const Person = () => {
         </center>
           <div className='Cpersonaje'>
             {dataPerson.map((personas) => (
-            <PersonaApi
-                key={personas.name}
-                nombre={personas.name}
-                altura={personas.height}
-                peso={personas.mass}
-                pelo={personas.hair_color}
-                piel={personas.skin_color}
-                ojos={personas.eye_color}
-                nacimiento={personas.birth_year}
-                genero={personas.gender}
-                hogar={personas.homeworld}
-              />
+            <Link to={`/detallepersonaje/${personas.n}`}>
+              <PersonaApi
+                  key={personas.name}
+                  nombre={personas.name}
+                  altura={personas.height}
+                  peso={personas.mass}
+                  pelo={personas.hair_color}
+                  piel={personas.skin_color}
+                  ojos={personas.eye_color}
+                  nacimiento={personas.birth_year}
+                  genero={personas.gender}
+                  hogar={personas.homeworld}
+                />
+              </Link>
             ))}
           </div>
           <div className="container d-flex   justify-content-center align-items-center">
