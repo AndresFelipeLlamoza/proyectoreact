@@ -3,7 +3,7 @@ import FooterApp from './components/Footer/FooterApp';
 import {PersonaApi} from './components/api/Personaje';
 import './components/api/apis.css';
 import React, { useEffect } from 'react';
-import { UsePerson } from './hooks/UsePerson';
+import { UsePerson } from './hooks/useperson';
 import { Link } from 'react-router-dom';
 
 const Person = () => {
@@ -24,7 +24,6 @@ const Person = () => {
         </center>
           <div className='Cpersonaje'>
             {dataPerson.map((personas) => (
-            <Link to={`/detallepersonaje/${personas.n}`}>
               <PersonaApi
                   key={personas.name}
                   nombre={personas.name}
@@ -37,10 +36,10 @@ const Person = () => {
                   genero={personas.gender}
                   hogar={personas.homeworld}
                 />
-              </Link>
+                
             ))}
           </div>
-          <div className="container d-flex   justify-content-center align-items-center">
+          <div className="container d-flex justify-content-center align-items-center">
             <button className="botonPag" onClick={disminuir}>
               Anterior
             </button>

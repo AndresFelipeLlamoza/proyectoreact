@@ -36,7 +36,8 @@ export const PersonaApi = ({
             <h5>Genero</h5>
             <p>{genero}</p>
             <h5>Hogar</h5>
-            <p>{hogar}</p>   
+            <p>{hogar}</p>  
+            <Link to='/detalleperson'>hola</Link> 
         </div>
       </div>
     )

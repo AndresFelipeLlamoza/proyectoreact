@@ -15,6 +15,7 @@ const DetallePersona = () => {
         <div className="container-detalle">
             <button className='botonatras' onClick={()=>window.history.back(-1)}><FontAwesomeIcon icon={faArrowLeft} /></button>
             <br></br>
+            
         </div>
 
         <FooterApp />
