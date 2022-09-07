@@ -11,7 +11,8 @@ function App() {
   
   return (
       <Routes>
-        <Route path='/detalleperson' element={<DetallePersonaje/>}/>
+        <Route path='/detalleperson/:name' element={<DetallePersonaje/>}/>
+        <Route path='/detalleperson' element={<DetallePersonaje/>}/> 
         <Route path='/' element={<Home/>}/> 
         <Route path='/characters' element={<Characters/>}/>
         <Route path='/planets' element={<Planets/>}/>

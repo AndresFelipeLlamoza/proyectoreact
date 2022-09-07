@@ -24,20 +24,21 @@ const Person = () => {
         </center>
           <div className='Cpersonaje'>
             {dataPerson.map((personas) => (
-              <PersonaApi
-                  key={personas.name}
-                  nombre={personas.name}
-                  altura={personas.height}
-                  peso={personas.mass}
-                  pelo={personas.hair_color}
-                  piel={personas.skin_color}
-                  ojos={personas.eye_color}
-                  nacimiento={personas.birth_year}
-                  genero={personas.gender}
-                  hogar={personas.homeworld}
-                />
-                
+              <Link style={{ textDecoration: 'none', color: 'black' }} to={`/detalleperson/${personas.name}`}>
+                <PersonaApi
+                key={personas.name}
+                nombre={personas.name}
+                altura={personas.height}
+                peso={personas.mass}
+                pelo={personas.hair_color}
+                piel={personas.skin_color}
+                ojos={personas.eye_color}
+                nacimiento={personas.birth_year}
+                genero={personas.gender}
+                hogar={personas.homeworld} />
+                </Link>
             ))}
+            
           </div>
           <div className="container d-flex justify-content-center align-items-center">
             <button className="botonPag" onClick={disminuir}>

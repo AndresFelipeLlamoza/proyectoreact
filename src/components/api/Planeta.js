@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './apis.css'
 
 
+
 export const PlanetasApi = ({
     planeta,
     clima,
@@ -14,6 +15,7 @@ export const PlanetasApi = ({
     return (
         <div className="container-plane">
             <div className="contenido-plane">
+                <img style={{width: '200px'}} src='https://starwarsblog.starwars.com/wp-content/uploads/2022/03/inside-intel-coruscant-planet.jpg'></img>
                 <h4>Nombre</h4>
                 <p>{ planeta }</p>
                 <h4>Clima</h4>

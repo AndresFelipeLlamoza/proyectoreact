@@ -16,7 +16,7 @@
 .contenido-cp{
     padding: 25px;
     margin-top: 60px;
-    display: grid;
+    text-align: center;
     height: 380px;
     color:rgb(0, 0, 0);
     border-radius:35px;
@@ -40,7 +40,7 @@
 .contenido-plane{
     padding: 25px;
     margin-top: 60px;
-    display: grid;
+    text-align: center;
     width: 280px;
     height: 400px;
     border-radius:35px;
@@ -117,3 +117,4 @@
     display: grid;
     justify-content: center;
 }
+

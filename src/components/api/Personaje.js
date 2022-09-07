@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import './apis.css'
+import { UsePerson } from '../../hooks/useperson';
 import { Link } from 'react-router-dom';
 
 
@@ -13,12 +13,16 @@ export const PersonaApi = ({
     ojos,
     nacimiento,
     genero,
-    hogar
+    hogar,
     }) => {
 
   return (
     <div className='ContainerApi'>
-        <div className="contenido-cp" >
+      
+        <div className="contenido-cp">
+        <img style={{width: '200px', marginLeft: '9px', borderRadius: '20px'}} src='https://www.cinemascomics.com/wp-content/uploads/2021/01/darth-vader-star-wars-el-ascenso-de-skywalker.jpg'></img>
+        <br></br>
+        <br></br>
             <h5>Nombre</h5>
             <p>{nombre}</p>
             <h5>Altura</h5>
@@ -36,8 +40,8 @@ export const PersonaApi = ({
             <h5>Genero</h5>
             <p>{genero}</p>
             <h5>Hogar</h5>
-            <p>{hogar}</p>  
-            <Link to='/detalleperson'>hola</Link> 
+            <p>{hogar}</p> 
+            
         </div>
       </div>
     )
