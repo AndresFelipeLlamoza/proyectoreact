@@ -24,9 +24,9 @@ const Person = () => {
         </center>
           <div className='Cpersonaje'>
             {dataPerson.map((personas) => (
-              <Link style={{ textDecoration: 'none', color: 'black' }} to={`/detalleperson/${personas.name}`}>
+              <Link style={{ textDecoration: 'none', color: 'black' }} to={`/detalleperson/${personas.url}`}>
                 <PersonaApi
-                key={personas.name}
+                key={personas.url}
                 nombre={personas.name}
                 altura={personas.height}
                 peso={personas.mass}
@@ -35,7 +35,8 @@ const Person = () => {
                 ojos={personas.eye_color}
                 nacimiento={personas.birth_year}
                 genero={personas.gender}
-                hogar={personas.homeworld} />
+                hogar={personas.homeworld}
+                url={personas.url} />
                 </Link>
             ))}
             

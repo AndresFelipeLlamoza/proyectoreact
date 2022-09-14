@@ -10,19 +10,32 @@ import './detalleperson.css'
 
 function DetallePersona() {
 
-    //console.log(useParams());
-    const {name} = useParams();  
-    console.log(name) 
+    console.log(useParams());
+    const {url} = useParams();  
+    console.log(url) 
+
+    const [personaje, setPersonaje] = React.useState([])
+
+    React.useEffect(() => {
+        getDataPerson()
+    }, [])
+
+    const getDataPerson = async () => {
+        const data = await fetch (`https://swapi.dev/api/people/${url}`)
+        const person = await data.json()
+        setPersonaje(person)
+    }
     return (  
         <>
-        
         <NavbarApp />
         <div className="container-detalle">
             <button className='botonatras' onClick={()=>window.history.back(-1)}><FontAwesomeIcon icon={faArrowLeft} /></button>
             <br></br>
-            <h1 className="text-light"></h1>
+            <h3>{personaje.name}</h3>
+            <p>{personaje.mass}</p>
         </div>
         <FooterApp />
+        
         </>
     );
 }

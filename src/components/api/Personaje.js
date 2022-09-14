@@ -14,6 +14,7 @@ export const PersonaApi = ({
     nacimiento,
     genero,
     hogar,
+    url
     }) => {
 
   return (
@@ -40,7 +41,9 @@ export const PersonaApi = ({
             <h5>Genero</h5>
             <p>{genero}</p>
             <h5>Hogar</h5>
-            <p>{hogar}</p> 
+            <p>{hogar}</p>
+            <h5>Url</h5>
+            <p>{url}</p> 
             
         </div>
       </div>
