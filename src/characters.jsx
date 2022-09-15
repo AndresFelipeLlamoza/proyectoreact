@@ -24,7 +24,7 @@ const Person = () => {
         </center>
           <div className='Cpersonaje'>
             {dataPerson.map((personas) => (
-              <Link style={{ textDecoration: 'none', color: 'black' }} to={`/detalleperson/${personas.url}`}>
+              <Link style={{ textDecoration: 'none', color: 'black' }} to={`/detalleperson/${personas.url.split("/")[5]}`}>
                 <PersonaApi
                 key={personas.url}
                 nombre={personas.name}

@@ -9,6 +9,25 @@
     color: black; 
 }
 
+.detallecard{
+    text-align: center;
+    
+}
+
+
+.imagensti{
+    width: 50rem;
+    border-radius: 25px 25px 25px 25px;
+    background: transparent;
+}
+.tarjetaContainer{
+    display: grid;
+    grid-template-columns: 20% 20%;
+    column-gap: 64px;
+    margin-left: 210px;
+    
+}
+
 .botonatras:hover{
     background-color: cyan;
     transition: all .5s;
