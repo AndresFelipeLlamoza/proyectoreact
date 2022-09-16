@@ -33,14 +33,14 @@ function DetallePersona() {
             <button className='botonatras' onClick={()=>window.history.back(-1)}><FontAwesomeIcon icon={faArrowLeft} /></button>
             <br></br>
             <div className="tarjetaContainer">
-            <Card style={{width:'20rem', borderRadius: '25px 0px 0px 25px'}} className="detallecard">
+            <Card style={{width:'20rem', borderRadius: '25px 0px 0px 25px', backgroundColor: '#f4d061'}} className="detallecard">
                 <br></br>
                 <h2>{personaje.name}</h2>
                 <br></br>
                 <h5>Altura:</h5>
-                <p>{personaje.height}</p>
+                <p>{personaje.height}Cm</p>
                 <h5>Peso:</h5>
-                <p>{personaje.mass}</p>
+                <p>{personaje.mass}Kg</p>
                 <h5>Color de pelo:</h5>
                 <p>{personaje.hair_color}</p>
                 <h5>Color de piel:</h5>
