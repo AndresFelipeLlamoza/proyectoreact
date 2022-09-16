@@ -16,15 +16,14 @@
 
 
 .imagensti{
-    width: 50rem;
+    width: 0rem;
     border-radius: 25px 25px 25px 25px;
     background: transparent;
 }
 .tarjetaContainer{
     display: grid;
     grid-template-columns: 20% 20%;
-    column-gap: 64px;
-    margin-left: 210px;
+    column-gap: 70px
     
 }
 
@@ -32,7 +31,6 @@
     background-color: cyan;
     transition: all .5s;
     transform: scale(0.9);
-   
     color: black;
 }
 

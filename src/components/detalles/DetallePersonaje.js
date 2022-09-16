@@ -37,23 +37,16 @@ function DetallePersona() {
                 <br></br>
                 <h2>{personaje.name}</h2>
                 <br></br>
-                <h5>Altura:</h5>
-                <p>{personaje.height}Cm</p>
-                <h5>Peso:</h5>
-                <p>{personaje.mass}Kg</p>
-                <h5>Color de pelo:</h5>
-                <p>{personaje.hair_color}</p>
-                <h5>Color de piel:</h5>
-                <p>{personaje.skin_color}</p>
-                <h5>Color de ojos:</h5>
-                <p>{personaje.eye_color}</p>
-                <h5>Año de nacimiento:</h5>
-                <p>{personaje.birth_year}</p>
-                <h5>Genero:</h5>
-                <p>{personaje.gender}</p>
+                <p><span style={{fontWeight:'bold', fontSize: '20px'}}>Altura:</span>{personaje.height}Cm</p>
+                <p><span style={{fontWeight:'bold', fontSize: '20px'}}>Peso:</span>{personaje.mass}Kg</p>
+                <p><span style={{fontWeight:'bold', fontSize: '20px'}}>Color de pelo:</span>{personaje.hair_color}</p>
+                <p><span style={{fontWeight:'bold', fontSize: '20px'}}>Color de piel:</span>{personaje.skin_color}</p>
+                <p><span style={{fontWeight:'bold', fontSize: '20px'}}>Altura:</span>{personaje.eye_color}</p>
+                <p><span style={{fontWeight:'bold', fontSize: '20px'}}>Altura:</span>{personaje.birth_year}</p>
+                <p><span style={{fontWeight:'bold', fontSize: '20px'}}>Altura:</span>{personaje.gender}</p>
             </Card>
             <Card className='imagensti'>
-                <img style={{width: '50rem', borderRadius: '0px 25px 25px 0px'}} src={'https://th.bing.com/th/id/R.a732bfaf0750d80ca45d67af28f39b00?rik=ZQruAmPhTKSLbg&pid=ImgRaw&r=0'}></img>
+                <img style={{width: '40rem', borderRadius: '0px 25px 25px 0px'}} src={'https://th.bing.com/th/id/R.a732bfaf0750d80ca45d67af28f39b00?rik=ZQruAmPhTKSLbg&pid=ImgRaw&r=0'}></img>
             </Card>
             <br></br>
             <br></br>
