@@ -2,9 +2,8 @@ navegador{
     background-color: #051336;
 }
 
-@font-face {
-    font-family: 'StarJedi';
-    src: url(../fuentes/FontSW.ttf);
+body {
+    font-family: BomberEscort-x3LD0;
 }
 
 .texto-nav{
