@@ -1,12 +1,12 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Slider from './Slider.css';
+import './Slider.css';
 import img from '../img.jsx'
 
 function CarouselFadeExample() {
   return (
     <Carousel >
       <Carousel.Item>
-        <img
+        <img 
           className="d-block w-100"
           src={img.slide1}
           alt="First slide"

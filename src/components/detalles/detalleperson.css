@@ -1,7 +1,7 @@
 .botonatras{
     background-color:#f4d061;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 100px;
     margin-top: 20px;
     margin-left: 25px;
@@ -18,22 +18,25 @@
 .imagensti{
     width: 0rem;
     border-radius: 25px 25px 25px 25px;
-    background: transparent;
+    background: rgba(0, 0, 0, 0);
 }
 .tarjetaContainer{
     display: grid;
-    grid-template-columns: 20% 20%;
-    column-gap: 70px
-    
+    grid-template-columns: 30% 20%;
+    column-gap: 0px;
+    justify-content: center
 }
 
 .botonatras:hover{
     background-color: cyan;
-    transition: all .5s;
+    transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
     transform: scale(0.9);
     color: black;
 }
 
+.botonatras:hover{
+    border-radius: 0
+}
 .titulo{
     color: white;
 }
@@ -45,4 +48,14 @@ h1{
     background-image: url(https://wallup.net/wp-content/uploads/2019/09/341378-outer-space.jpg);
     background-size: cover;
 
+}
+
+@media screen and (max-width: 752px){
+    .tarjetaContainer{
+        column-gap: 150px;
+        justify-content: start;
+    }
+    img{
+        width: 10rem
+    }
 }
